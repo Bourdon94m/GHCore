@@ -23,7 +23,7 @@ Drop it into any project via CMake — no compilation step required.
 include(FetchContent)
 FetchContent_Declare(
     GHCore
-    GIT_REPOSITORY https://github.com/your-username/GHCore.git
+    GIT_REPOSITORY https://github.com/Bourdon94m/GHCore.git
     GIT_TAG        main
 )
 FetchContent_MakeAvailable(GHCore)
@@ -34,7 +34,7 @@ target_link_libraries(your_target PRIVATE GHCore)
 ### Option B — Git submodule
 
 ```bash
-git submodule add https://github.com/your-username/GHCore.git third_party/GHCore
+git submodule add https://github.com/Bourdon94m/GHCore.git third_party/GHCore
 ```
 
 ```cmake
@@ -142,7 +142,7 @@ HANDLE hProc = GHCore::Process::Open(pid);
 
 // Module bases
 uintptr_t base       = GHCore::Process::GetModuleBase();                       // current exe
-uintptr_t remoteBase = GHCore::Process::GetModuleBaseEx(hProc, L"engine.dll"); // remote
+uintptr_t remoteBase = GHCore::Process::GetModuleBaseEx(hProc, L"test.exe");   // remote
 
 // List modules and threads
 auto modules = GHCore::Process::GetModules(hProc);
