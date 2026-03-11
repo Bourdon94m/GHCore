@@ -1,0 +1,45 @@
+# ── Build directories ──────────────────────────────────────────────────────────
+build/
+src/build/
+out/
+bin/
+cmake-build-*/
+
+# ── CMake generated files ──────────────────────────────────────────────────────
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+_deps/
+
+# ── Visual Studio ──────────────────────────────────────────────────────────────
+*.sln
+*.slnx
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+*.VC.db
+*.VC.opendb
+ipch/
+
+# ── Compiled output ────────────────────────────────────────────────────────────
+*.exe
+*.dll
+*.lib
+*.pdb
+*.ilk
+*.exp
+*.obj
+*.o
+*.a
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+Thumbs.db
+Desktop.ini
+.DS_Store
