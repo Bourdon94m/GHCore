@@ -274,14 +274,20 @@ GHCore/
 
 ---
 
-## Building the example
+## Building
+
+GHCore is **header-only** — there's no `.lib` to generate or link. Just include the headers!
+
+The example can be built to see how to use the library:
 
 ```bash
 cmake -S . -B build
 cmake --build build
 ```
 
-To skip the example:
+This generates `example.exe` in `build/Debug/` (or `build/Release/`).
+
+To skip building the example:
 
 ```bash
 cmake -S . -B build -DGHCORE_BUILD_EXAMPLE=OFF
